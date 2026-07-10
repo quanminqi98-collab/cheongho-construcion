@@ -1,0 +1,187 @@
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">인사말</h1>
+            <p class="page-subtitle">고객의 신뢰를 최우선으로 생각하는 청호건설의 약속</p>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <div class="page-content-container">
+            <!-- CEO Greeting -->
+            <section class="section">
+                <div class="greeting-container">
+                    <div class="greeting-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="대표이사 사진" data-src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80">
+                    </div>
+                    <div class="greeting-content">
+                        <h2 class="greeting-title">안녕하십니까,<br>주식회사 청호건설 대표이사 [성함]입니다.</h2>
+                        <div class="greeting-message">
+                            <p class="message-paragraph">
+                                청호건설을 찾아주신 고객 여러분께 진심으로 감사드립니다.
+                            </p>
+                            <p class="message-paragraph">
+                                저희 청호건설은 [설립 연도]년 설립 이래, 건축 및 리모델링 분야에서 고객의 신뢰를 한번도 저버리지 않기 위해 노력해 왔습니다.
+                                공사의 완성도는 현장이 아니라, 관리에서 결정된다는 신념으로, 설계부터 시공, 품질관리, 사후관리까지 모든 과정을 책임지고 있습니다.
+                            </p>
+                            <p class="message-paragraph">
+                                건축은 단순히 건물을 짓는 것이 아닙니다. 사람들이 살고, 일하고, 즐기는 공간을 만드는 일입니다.
+                                저희는 고객의 비전과 꿈을 이해하고, 그것을 현실로 만드는 공간을 설계하고 시공합니다.
+                            </p>
+                            <p class="message-paragraph">
+                                앞으로도 청호건설은 전문성과 책임감을 바탕으로, 고객에게 더 나은 서비스와 더 높은 품질의 공간을 제공하기 위해 끊임없이 혁신하고 발전하겠습니다.
+                            </p>
+                            <p class="message-paragraph">
+                                고객의 신뢰는 저희에게 가장 소중한 자산입니다. 그 신뢰를 배신하지 않기 위해, 저희는 오늘도 최선을 다하고 있습니다.
+                            </p>
+                            <p class="message-signature">
+                                주식회사 청호건설 대표이사 [성함]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Company Values -->
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">청호건설이 지키는 가치</h2>
+                    </div>
+                    <div class="grid grid-3">
+                        <div class="value-item fade-in">
+                            <div class="value-number">01</div>
+                            <h4 class="value-item-title">고객 중심</h4>
+                            <p class="value-item-description">고객의 요구와 기대를 초과하는 결과를 제공하기 위해 노력합니다.</p>
+                        </div>
+                        <div class="value-item fade-in">
+                            <div class="value-number">02</div>
+                            <h4 class="value-item-title">투명한 경영</h4>
+                            <p class="value-item-description">모든 과정을 투명하게 공개하고 신뢰를 구축합니다.</p>
+                        </div>
+                        <div class="value-item fade-in">
+                            <div class="value-number">03</div>
+                            <h4 class="value-item-title">품질 우선</h4>
+                            <p class="value-item-description">최고의 품질을 위해 끊임없이 연구하고 개선합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Leadership Philosophy -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">경영 철학</h2>
+                    </div>
+                    <div class="philosophy-box">
+                        <p class="philosophy-text">
+                            "좋은 건물은 좋은 사람들이 만듭니다. 청호건설은 능력 있고 책임감 있는 전문가들로 구성된 팀입니다.
+                            저희는 각 프로젝트를 마치 자신의 집을 짓는 마음으로 임합니다. 그것이 저희가 고객에게 약속하는 방식입니다."
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Back to Company -->
+            <section class="section bg-light">
+                <div class="container text-center">
+                    <a href="/company" class="btn btn-outline">회사소개로 돌아가기</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+.greeting-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+}
+
+@media (min-width: 768px) {
+    .greeting-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.greeting-image img {
+    width: 100%;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.greeting-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.4;
+}
+
+.greeting-message {
+    padding: var(--spacing-xl);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-lg);
+}
+
+.message-paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+    text-indent: 1em;
+}
+
+.message-signature {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    text-align: right;
+    margin-top: var(--spacing-xl);
+    text-indent: 0;
+}
+
+.value-item {
+    padding: var(--spacing-xl);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.value-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-md);
+}
+
+.value-item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-item-description {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.philosophy-box {
+    padding: var(--spacing-2xl);
+    background-color: var(--color-navy);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+}
+
+.philosophy-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--color-white);
+    font-style: italic;
+}
+</style>

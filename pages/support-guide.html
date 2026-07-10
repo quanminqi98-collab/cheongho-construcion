@@ -1,0 +1,169 @@
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">공사 준비 가이드</h1>
+            <p class="page-subtitle">공사 시작 전 준비해야 할 사항을 안내합니다</p>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <div class="page-content-container">
+            <!-- Guide Content -->
+            <section class="section">
+                <div class="guide-content">
+                    <h2 class="section-title">공사 전 체크리스트</h2>
+                    
+                    <div class="checklist-section">
+                        <h3 class="checklist-title">1. 예산 및 비용 확인</h3>
+                        <ul class="checklist-list">
+                            <li class="checklist-item">예상 공사비 산정</li>
+                            <li class="checklist-item">추가 비용 가능성 확인</li>
+                            <li class="checklist-item">자금 조달 계획 수립</li>
+                            <li class="checklist-item">여유 예산 확보</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <h3 class="checklist-title">2. 시공 일정 계획</h3>
+                        <ul class="checklist-list">
+                            <li class="checklist-item">공사 시작일 및 종료일 결정</li>
+                            <li class="checklist-item">임시 거처 마련 (필요시)</li>
+                            <li class="checklist-item">업무 일정 조정</li>
+                            <li class="checklist-item">이사 일정 계획 (필요시)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <h3 class="checklist-title">3. 현장 준비</h3>
+                        <ul class="checklist-list">
+                            <li class="checklist-item">가구 및 물품 정리</li>
+                            <li class="checklist-item">귀중품 보관</li>
+                            <li class="checklist-item">전기/수도/가스 확인</li>
+                            <li class="checklist-item">통신 서비스 확인</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <h3 class="checklist-title">4. 법적 절차</h3>
+                        <ul class="checklist-list">
+                            <li class="checklist-item">건축 허가 확인 (필요시)</li>
+                            <li class="checklist-item">관공서 신고 (필요시)</li>
+                            <li class="checklist-item">입주자 동의 (아파트 등)</li>
+                            <li class="checklist-item">관련 서류 준비</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <h3 class="checklist-title">5. 시공사 선정</h3>
+                        <ul class="checklist-list">
+                            <li class="checklist-item">다수 업체 견적 비교</li>
+                            <li class="checklist-item">업체 실적 및 평판 확인</li>
+                            <li class="checklist-item">계약서 꼼꼼히 검토</li>
+                            <li class="checklist-item">하자 보수 약관 확인</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tips -->
+            <section class="section bg-light">
+                <div class="container">
+                    <h2 class="section-title">유용한 팁</h2>
+                    <div class="tips-grid">
+                        <div class="tip-card fade-in">
+                            <h4 class="tip-title">상담은 충분히 받으세요</h4>
+                            <p class="tip-description">여러 업체와 상담하여 비교하고, 궁금한 점은 모두 질문하세요.</p>
+                        </div>
+                        <div class="tip-card fade-in">
+                            <h4 class="tip-title">계약서를 꼼꼼히 확인하세요</h4>
+                            <p class="tip-description">계약서의 모든 조항을 이해하고, 불확실한 부분은 명확히 하세요.</p>
+                        </div>
+                        <div class="tip-card fade-in">
+                            <h4 class="tip-title">여유 일정을 두세요</h4>
+                            <p class="tip-description">예상치 못한 상황에 대비하여 여유 있는 일정을 계획하세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Back to Support -->
+            <section class="section">
+                <div class="container text-center">
+                    <a href="/support" class="btn btn-outline">고객지원으로 돌아가기</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+.guide-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.checklist-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.checklist-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-md);
+}
+
+.checklist-list {
+    list-style: none;
+}
+
+.checklist-item {
+    padding: var(--spacing-md);
+    padding-left: var(--spacing-2xl);
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.checklist-item::before {
+    content: '✓';
+    position: absolute;
+    left: var(--spacing-md);
+    color: var(--color-navy);
+    font-weight: 700;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .tips-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tip-card {
+    padding: var(--spacing-xl);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.tip-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tip-description {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+</style>

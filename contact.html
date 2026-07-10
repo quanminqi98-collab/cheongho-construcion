@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의 및 오시는 길 | 주식회사 청호건설</title>
+    <meta name="description" content="청호건설에 문의하고 오시는 길을 안내합니다. 상담 문의, 견적 신청, 회사 위치 및 연락처 정보를 확인하세요.">
+    <meta name="keywords" content="청호건설, 문의하기, 상담 문의, 견적 신청, 오시는 길, 연락처">
+    <meta name="author" content="주식회사 청호건설">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="주식회사 청호건설">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chcc.co.kr/contact.html">
+    <meta property="og:title" content="문의 및 오시는 길 | 주식회사 청호건설">
+    <meta property="og:description" content="청호건설에 문의하고 오시는 길을 안내합니다. 상담 문의, 견적 신청, 회사 위치 및 연락처 정보를 확인하세요.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">청호건설</span>
+                </a>
+            </div>
+            
+            <nav class="nav-desktop">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="company.html" class="nav-link">회사소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">사업분야</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">주요 실적</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">문의 및 오시는 길</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <a href="tel:02-123-4567" class="cta-button">전화 상담</a>
+                <button class="mobile-menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <button class="mobile-nav-close" aria-label="메뉴 닫기">
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="mobile-nav-menu">
+                <a href="company.html" class="mobile-nav-link">회사소개</a>
+                <a href="services.html" class="mobile-nav-link">사업분야</a>
+                <a href="portfolio.html" class="mobile-nav-link">주요 실적</a>
+                <a href="contact.html" class="mobile-nav-link">문의 및 오시는 길</a>
+            </nav>
+            
+            <div class="mobile-nav-cta">
+                <a href="tel:02-123-4567" class="cta-button full-width">전화 상담</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="index.html">홈</a></li>
+                    <li class="breadcrumb-item active">문의 및 오시는 길</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-container">
+                <h1 class="page-title">상담 문의 및 오시는 길</h1>
+                <p class="page-subtitle">전문 상담원이 친절하게 상담해 드립니다. 언제든지 문의해 주세요.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <div class="section-header">
+                            <h2 class="section-title">상담 문의</h2>
+                            <p class="section-subtitle">프로젝트에 대한 상담을 신청하세요</p>
+                        </div>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">이름 *</label>
+                                <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">연락처 *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="연락처를 입력하세요">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">프로젝트 유형 *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">선택하세요</option>
+                                    <option value="remodeling">리모델링</option>
+                                    <option value="construction">건축 공사</option>
+                                    <option value="commercial">상업공간 시공</option>
+                                    <option value="interior">인테리어 공사</option>
+                                    <option value="maintenance">시설물 유지보수</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">예산 범위</label>
+                                <select id="budget" name="budget">
+                                    <option value="">선택하세요</option>
+                                    <option value="under-5000">5,000만원 미만</option>
+                                    <option value="5000-10000">5,000만원 ~ 1억원</option>
+                                    <option value="10000-30000">1억원 ~ 3억원</option>
+                                    <option value="30000-50000">3억원 ~ 5억원</option>
+                                    <option value="over-50000">5억원 이상</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">상담 내용 *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="상담하고 싶은 내용을 자세히 입력하세요"></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span>개인정보 수집 및 이용에 동의합니다.</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">상담 문의 신청</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <div class="section-header">
+                            <h2 class="section-title">연락처</h2>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">대표전화</h4>
+                                    <p class="contact-value">032-812-4343</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">팩스</h4>
+                                    <p class="contact-value">032-812-4545</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">주소</h4>
+                                    <p class="contact-value">인천광역시 남동구 앵고개로 448, 205호(고잔동)</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">영업시간</h4>
+                                    <p class="contact-value">평일 09:00 - 18:00<br>(주말 및 공휴일 휴무)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Contact Buttons -->
+                        <div class="quick-contact-buttons">
+                            <a href="tel:02-123-4567" class="btn btn-primary full-width">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                전화 상담
+                            </a>
+                            <a href="#" class="btn btn-secondary full-width">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 3C6.48 3 2 6.48 2 11c0 2.21.72 4.16 1.95 5.72L2 22l5.28-1.95C8.84 21.28 10.79 22 13 22c4.52 0 8-3.48 8-8s-3.48-8-8-8zm0 14c-1.48 0-2.75-.81-3.45-2-.3-.52-.1-1.18.42-1.48.52-.3 1.18-.1 1.48.42.4.69 1.13 1.06 1.55 1.06.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5c-1.93 0-3.5-1.57-3.5-3.5S10.07 5 12 5s3.5 1.57 3.5 3.5c0 .55-.45 1-1 1s-1-.45-1-1c0-.83-.67-1.5-1.5-1.5S11 7.67 11 8.5s.67 1.5 1.5 1.5c1.93 0 3.5 1.57 3.5 3.5S13.93 17 12 17z"/>
+                                </svg>
+                                카카오톡 상담
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">오시는 길</h2>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-placeholder-content">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <p class="map-placeholder-text">지도 로딩 중...</p>
+                            <p class="map-placeholder-subtext">인천광역시 남동구 앵고개로 448, 205호</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transportation Guide -->
+                <div class="transportation-guide">
+                    <h3 class="transportation-title">교통 안내</h3>
+                    <div class="transportation-items">
+                        <div class="transportation-item">
+                            <div class="transportation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="9" y1="3" x2="9" y2="21"/>
+                                </svg>
+                            </div>
+                            <div class="transportation-details">
+                                <h4 class="transportation-label">지하철</h4>
+                                <p class="transportation-value">동춘역 인천1호선 3번 출구</p>
+                            </div>
+                        </div>
+                        <div class="transportation-item">
+                            <div class="transportation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-2.7-.6-3.5-1.1c-.8-.2-1.5-1-1.5-1.9v-3c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v1c0 .6.4 1 1 1h1c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1H5c-.6 0-1 .4-1 1v1c0 .6.4 1 1 1h1c.6 0 1-.4 1-1V5c0-.6.4-1 1-1h2c.6 0 1 .4 1 1v3c0 .9-.7 1.7-1.5 1.9C8.7 10.6 6 10 6 10s-2.7.6-3.5 1.1C1.7 11.3 1 12.1 1 13v3c0 .6.4 1 1 1h2"/>
+                                </svg>
+                            </div>
+                            <div class="transportation-details">
+                                <h4 class="transportation-label">버스</h4>
+                                <p class="transportation-value">6-1번 디에스솔텍 정류장 하차</p>
+                            </div>
+                        </div>
+                        <div class="transportation-item">
+                            <div class="transportation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="3" width="15" height="13"></rect>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                </svg>
+                            </div>
+                            <div class="transportation-details">
+                                <h4 class="transportation-label">자가용</h4>
+                                <p class="transportation-value">내비게이션에 인천광역시 남동구 앵고개로 448, 205호를 검색하세요</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">청호건설</span>
+                    </div>
+                    <p class="footer-description">비전의 시작부터 완벽한 준공까지, 신뢰의 청호건설입니다.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">회사소개</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="company.html">회사소개</a></li>
+                            <li><a href="services.html">사업분야</a></li>
+                            <li><a href="portfolio.html">주요 실적</a></li>
+                            <li><a href="contact.html">문의 및 오시는 길</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">사업분야</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="services.html">건축 공사</a></li>
+                            <li><a href="services.html">리모델링 공사</a></li>
+                            <li><a href="services.html">상업공간 시공</a></li>
+                            <li><a href="services.html">인테리어 공사</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">연락처</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="contact.html">상담 문의</a></li>
+                            <li><a href="contact.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-company-info">
+                    <p class="footer-company-name">주식회사 청호건설</p>
+                    <p class="footer-address">[주소 정보] 서울특별시 [구] [동] [상세주소]</p>
+                    <p class="footer-contact">대표전화: 032-812-4343 | 팩스: 032-812-4545</p>
+                    <p class="footer-business-number">사업자등록번호: 665-87-01660</p>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">개인정보처리방침</a>
+                    <a href="#" class="footer-legal-link">이용약관</a>
+                </div>
+                
+                <p class="footer-copyright">© 2026 주식회사 청호건설. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to a server
+            // For now, we'll just show an alert
+            alert('상담 문의가 접수되었습니다. 담당자가 빠른 시일 내에 연락드리겠습니다.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

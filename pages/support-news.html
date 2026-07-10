@@ -1,0 +1,130 @@
+<div class="page">
+    <div class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">공지사항</h1>
+            <p class="page-subtitle">청호건설의 공지사항을 확인하세요</p>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <div class="page-content-container">
+            <section class="section">
+                <div class="news-content">
+                    <h2 class="section-title">최신 공지사항</h2>
+                    
+                    <div class="news-list">
+                        <div class="news-item fade-in">
+                            <div class="news-date">2024.01.15</div>
+                            <h4 class="news-title">설 명절 연휴 운영 안내</h4>
+                            <p class="news-description">설 명절 연휴 기간 동안 고객지원센터 운영 시간을 안내해 드립니다.</p>
+                            <a href="#" class="news-link">자세히 보기 →</a>
+                        </div>
+                        
+                        <div class="news-item fade-in">
+                            <div class="news-date">2024.01.01</div>
+                            <h4 class="news-title">2024년 신년 인사</h4>
+                            <p class="news-description">새해 복 많이 받으시길 바라며, 2024년에도 고객 여러분의 신뢰에 보답하겠습니다.</p>
+                            <a href="#" class="news-link">자세히 보기 →</a>
+                        </div>
+                        
+                        <div class="news-item fade-in">
+                            <div class="news-date">2023.12.25</div>
+                            <h4 class="news-title">성탄절 연휴 운영 안내</h4>
+                            <p class="news-description">성탄절 연휴 기간 동안 고객지원센터 운영 시간을 안내해 드립니다.</p>
+                            <a href="#" class="news-link">자세히 보기 →</a>
+                        </div>
+                        
+                        <div class="news-item fade-in">
+                            <div class="news-date">2023.12.01</div>
+                            <h4 class="news-title">겨울철 공사 안내</h4>
+                            <p class="news-description">겨울철 공사 시 주의사항과 청호건설의 대응 방안을 안내해 드립니다.</p>
+                            <a href="#" class="news-link">자세히 보기 →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section bg-light">
+                <div class="container">
+                    <h2 class="section-title">문의하기</h2>
+                    <p class="section-subtitle">공지사항에 대해 궁금한 점이 있으시면 문의해 주세요.</p>
+                    <div class="text-center">
+                        <a href="/contact" class="btn btn-primary">문의하기</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="container text-center">
+                    <a href="/support" class="btn btn-outline">고객지원으로 돌아가기</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<style>
+.news-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.news-item {
+    padding: var(--spacing-xl);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .news-item {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: var(--spacing-xl);
+    }
+}
+
+.news-date {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    font-size: 0.875rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.news-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-bottom: var(--spacing-sm);
+}
+
+.news-description {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    flex: 1;
+}
+
+.news-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-blue);
+    transition: color var(--transition-fast);
+}
+
+.news-link:hover {
+    color: var(--color-blue-dark);
+}
+</style>
