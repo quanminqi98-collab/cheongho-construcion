@@ -874,6 +874,7 @@ ul, ol {
     display: flex;
     align-items: center;
     overflow: hidden;
+    justify-content: center;    
 }
 
 .hero-background {
@@ -921,6 +922,7 @@ ul, ol {
     margin-bottom: var(--spacing-2xl);
     max-width: 600px;
     line-height: 1.7;
+    justify-content: center;    
 }
 
 .hero-buttons {
