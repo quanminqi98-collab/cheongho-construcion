@@ -121,6 +121,21 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;   
+}
+
+.logo-flex-box{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
 }
 
 .header-left {
@@ -135,7 +150,9 @@ ul, ol {
 }
 
 .logo-text {
-    color: var(--color-navy);
+    color: #1a2536;
+    font-size: 24px;
+    font-weight: 700;   
 }
 
 /* Desktop Navigation */
@@ -886,7 +903,7 @@ ul, ol {
     z-index: 1;
 }
 
-.hero-background img {
+.hero-background video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -906,6 +923,8 @@ ul, ol {
     position: relative;
     z-index: 3;
     color: var(--color-white);
+    align-items: center;
+    text-align: center;
 }
 
 .hero-title {
@@ -929,6 +948,8 @@ ul, ol {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-md);
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-light {
@@ -1835,24 +1856,49 @@ ul, ol {
 
 /* Map */
 .map-container {
-    height: 400px;
+    height: 600px;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
+    background-color: transparent;     
+}
+
+.map-wrapper iframe {
+    position: absolute;       /* 부모 박스의 꼭짓점에 강제 밀착 */
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;  /* 부모의 500px 높이를 그대로 물려받음 */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
 }
 
 .map-placeholder {
     width: 100%;
     height: 100%;
-    background-color: var(--color-gray);
+    background-color:  transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
-.map-placeholder-content {
-    text-align: center;
-    color: var(--color-text-light);
+.map-wrapper {
+    width: 100%;
+    max-width: 1200px;        /* 원하는 전체 가로폭 */
+    margin: 0 auto 30px auto;
+    background-color: transparent;
+    border-radius: 0px;      /* 모서리 라운딩 */
+    box-shadow: none; /* 부드러운 그림자 */
+    
+    /* [핵심] 내부 iframe이 상단 기준 0,0 위치에 완벽히 고정되도록 기준점 설정 */
+    position: relative; 
+    overflow: hidden;         /* 라운딩된 모서리 바깥 영역을 깔끔하게 커트 */
+    
+    /* [핵심] 구글 주소창(place-details-compact-container)이 완전히 표시될 수 있는 안정적인 세로 비율/높이 설정 */
+    height: 500px;
 }
 
 .map-placeholder svg {
