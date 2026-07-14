@@ -579,11 +579,16 @@ ul, ol {
     color: var(--color-navy);
     margin-bottom: var(--spacing-md);
     letter-spacing: -0.02em;
+    
 }
 
 .page-subtitle {
     font-size: 1.125rem;
-    color: var(--color-text-light);
+    color: var(--color-text-light);   
+    font-weight: 500; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-content {
@@ -619,6 +624,7 @@ ul, ol {
     color: var(--color-text-light);
     max-width: 600px;
     margin: 0 auto;
+    
 }
 
 /* Button Styles */
@@ -1242,6 +1248,7 @@ ul, ol {
     font-weight: 700;
     margin-bottom: var(--spacing-md);
     letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.9);;
 }
 
 .page-subtitle {
@@ -1862,7 +1869,8 @@ ul, ol {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    background-color: transparent;     
+    background-color: transparent;
+    position: relative;     
 }
 
 .map-wrapper iframe {
@@ -1875,6 +1883,9 @@ ul, ol {
     margin: 0;
     padding: 0;
     border-radius: 0px;
+    border: 0 !important;
+    outline: none;
+    object-fit: cover;
 }
 
 .map-placeholder {
@@ -1885,6 +1896,10 @@ ul, ol {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    position: absolute;      
 }
 
 .map-wrapper {
@@ -1901,6 +1916,10 @@ ul, ol {
     
     /* [핵심] 구글 주소창(place-details-compact-container)이 완전히 표시될 수 있는 안정적인 세로 비율/높이 설정 */
     height: 500px;
+    border: none !important;       /* 테두리 강제 제거 */
+    box-shadow: none !important;   /* 그림자 강제 제거 */
+    outline: none !important;
+    object-fit: cover;
 }
 
 .map-placeholder svg {
